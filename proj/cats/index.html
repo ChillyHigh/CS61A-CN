@@ -120,60 +120,55 @@
 
 
 
-        <h2 id="introduction">Introduction</h2>
+        <h2 id="introduction">介绍</h2>
 
 
         <blockquote>
-          <p><strong>Due Dates:</strong></p>
+          <p><strong>截止日期：</strong></p>
 
           <ul>
-            <li>Submit Phase 1 by <strong>Tuesday, 9/29</strong>.</li>
-            <li>Submit the whole project by <strong>Friday, 10/2</strong>.</li>
-            <li>You will receive an early submission bonus point for submitting the entire
-              project by <strong>Thursday, 10/1</strong>.</li>
+            <li>提交第一阶段的截止日期为 <strong>星期二, 9/29</strong>。</li>
+            <li>整个项目的提交截止日期为 <strong>星期五, 10/2</strong>。</li>
+            <li>如果在<strong>星期四, 10/1</strong>前提交整个项目，你将获得一个提前提交的额外积分。</li>
           </ul>
 
-          <p>You may work with a partner for the entire project.</p>
+          <p>你可以与同伴一起完成整个项目。</p>
         </blockquote>
 
-        <p>In this project, you will write a program that measures typing speed.
-          Additionally, you will implement typing autocorrect, which is a feature that
-          attempts to correct the spelling of a word after a user types it. This project
-          is inspired by <a href="https://play.typeracer.com/">typeracer</a>.</p>
+        <p>在这个项目中，你将编写一个用于测量打字速度的程序。此外，你还会实现打字自动纠错功能，这是一种在用户输入单词后尝试纠正拼写错误的功能。这个项目的灵感来自 <a
+            href="https://play.typeracer.com/">typeracer</a>。</p>
 
 
-        <h2 id="final-product">Final Product</h2>
+        <h2 id="final-product">最终产品</h2>
 
-        <p>Our staff solution to the project can be interacted with at <a
-            href="https://cats.cs61a.org">cats.cs61a.org</a> - if you'd like, try it out now! When you finish the
-          project, you'll have implemented a significant part of this game yourself!</p>
-
-
-        <h2 id="download-starter-files">Download starter files</h2>
+        <p>我们的项目解决方案可以在 <a href="https://cats.cs61a.org">cats.cs61a.org</a> 进行交互 -
+          如果你愿意，现在就试试看！当你完成项目时，你将自己实现这个游戏的一个重要部分！</p>
 
 
-        <p>You can download all of the project code as a <a href="cats.zip">zip archive</a>. This
-          project includes several files, but your changes will be made only to
-          <code>cats.py</code>. Here are the files included in the archive:
+        <h2 id="download-starter-files">下载起始文件</h2>
+
+
+        <p>你可以下载项目代码的 <a href="cats.zip">zip 文件</a> 该压缩包包含多个文件，但你的只需要更改
+          <code>cats.py</code>。以下是压缩包中包含的文件：
         </p>
 
         <ul>
-          <li><code>cats.py</code>: The typing test logic.</li>
-          <li><code>utils.py</code>: Utility functions for interacting with files and strings.</li>
-          <li><code>ucb.py</code>: Utility functions for CS 61A projects.</li>
-          <li><code>data/sample_paragraphs.txt</code>: A file containing text samples to be typed. These are <a
-              href="https://github.com/kavigupta/wikivideos/blob/626de521e04ca643751ed85d549faca6ea528b1d/get_corpus.py">scraped</a>
-            Wikipedia articles about various topics.</li>
-          <li><code>data/common_words.txt</code>: A file containing common <a
-              href="https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears.txt">English
-              words in order of frequency</a>.</li>
-          <li><code>data/words.txt</code>: A file containing many more <a
-              href="https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears.txt">English
-              words in order of frequency</a>.</li>
-          <li><code>gui.py</code>: A web server for the web-based graphical user interface (GUI).</li>
-          <li><code>gui_files</code>: A directory of files needed for the graphical user interface (GUI).</li>
-          <li><code>images</code>: A directory of images.</li>
-          <li><code>ok</code>, <code>proj02.ok</code>, <code>tests</code>: Testing files.</li>
+          <li><code>cats.py</code>: 打字测试逻辑。</li>
+          <li><code>utils.py</code>: 与文件和字符串交互的实用程序函数。</li>
+          <li><code>ucb.py</code>: CS 61A 课程项目的实用程序函数。</li>
+          <li><code>data/sample_paragraphs.txt</code>: 包含待输入文本样本的文件。这些是 <a
+              href="https://github.com/kavigupta/wikivideos/blob/626de521e04ca643751ed85d549faca6ea528b1d/get_corpus.py">抓取</a>
+            的关于各种主题的维基百科文章。</li>
+          <li><code>data/common_words.txt</code>: 包含常见的 <a
+              href="https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears.txt">英语单词</a>
+            的文件，按频率排序。</li>
+          <li><code>data/words.txt</code>: 包含更多 <a
+              href="https://github.com/first20hours/google-10000-english/blob/master/google-10000-english-usa-no-swears.txt">英语单词</a>
+            的文件，按频率排序。</li>
+          <li><code>gui.py</code>: 用于基于 Web 的图形用户界面 (GUI) 的 Web 服务器。</li>
+          <li><code>gui_files</code>: 图形用户界面 (GUI) 所需文件的目录。</li>
+          <li><code>images</code>: 图像存储路径</li>
+          <li><code>ok</code>, <code>proj02.ok</code>, <code>tests</code>: 测试文件。</li>
         </ul>
 
         <p>The CATS GUI is an <a href="https://github.com/Cal-CS-61A-Staff/cats-gui">open source project on Github</a>.
@@ -182,7 +177,7 @@
 
 
 
-        <h2 id="logistics">Logistics</h2>
+        <h2 id="logistics">项目安排与提交</h2>
 
 
 
@@ -191,47 +186,31 @@
 
 
 
-        <p>The project is worth 20 points. 17 points are assigned for correctness of your final code, 1 point for
-          submitting Phase 1 by the checkpoint deadline, and 2 points for composition.</p>
+        <p>本项目总分为20分。其中17分用于最终代码的正确性，1分用于在检查点截止日期前提交第一阶段，2分用于代码结构与风格。</p>
 
-
-        <p>You will turn in the following files:</p>
+        <p>你需要提交以下文件：</p>
 
         <ul>
           <li><code>cats.py</code></li>
         </ul>
 
-        <p>You do not need to modify or turn in any other files to complete the
-          project. To submit the project, run the following command:</p>
+        <p>你无需修改或提交其他文件即可完成本项目。提交项目时，请运行以下命令：</p>
 
         <pre><code>python3 ok --submit</code></pre>
 
-        <p>You will be able to view your submissions on the <a href="http://ok.cs61a.org">Ok dashboard</a>.</p>
+        <p>你可以在 <a href="http://ok.cs61a.org">Ok dashboard</a> 上查看你的提交记录。</p>
 
-        <p>For the functions that we ask you to complete, there may be some
-          initial code that we provide. If you would rather not use that code,
-          feel free to delete it and start from scratch. You may also add new
-          function definitions as you see fit.</p>
+        <p>对于我们要求你完成的函数，可能会提供一些初始代码。如果你不想使用这些代码，可以删除并从头开始编写。你也可以根据需要添加新的函数定义。</p>
 
-        <p>However, please do <b>not</b> modify any other functions. Doing so may
-          result in your code failing our autograder tests. Also, please do not
-          change any function signatures (names, argument order, or number of
-          arguments).</p>
+        <p>但请<b>不要</b>修改其他函数。这样做可能导致你的代码无法通过自动评分测试。同时，请不要更改任何函数签名（名称、参数顺序或参数数量）。</p>
 
+        <p>在整个项目过程中，你应该经常测试代码的正确性。经常测试有助于快速定位问题，但也不要测试<i>过于频繁</i>，要留出时间思考问题。</p>
 
+        <p>我们为你提供了一个名为 <b>ok</b> 的自动评分器，帮助你测试代码并跟踪进度。第一次运行自动评分器时，你会被要求<b>使用你的 Ok 账户通过网页登录</b>，请按要求操作。每次运行
+          <code>ok</code> 时，它都会将你的工作和进度备份到我们的服务器。
+        </p>
 
-        <p>Throughout this project, you should be testing the correctness of your code.
-          It is good practice to test often, so that it is easy to isolate any problems.
-          However, you should not be testing <i>too</i> often, to allow yourself time to
-          think through problems.</p>
-
-        <p>We have provided an <b>autograder</b> called <code>ok</code> to help you
-          with testing your code and tracking your progress. The first time you run the
-          autograder, you will be asked to <b>log in with your Ok account using your web
-            browser</b>. Please do so. Each time you run <code>ok</code>, it will back up
-          your work and progress on our servers.</p>
-
-        <p>The primary purpose of <code>ok</code> is to test your implementations.</p>
+        <p><code>ok</code> 的主要用途是测试你的实现。</p>
 
         <!-- <p>First, some of the test cases are <i>locked</i>. To unlock tests, run the
 following command from your terminal:</p>
@@ -291,10 +270,9 @@ the autograder results after submitting. However, the autograder has a 15 minute
 cooldown period. If you submit before 15 minutes have passed, the autograder will
 not run.</p> -->
 
-        <p>We recommend that you submit <b>after you finish each
-            problem</b>. Only your last submission will be graded. It is also useful for us
-          to have more backups of your code in case you run into a submission issue. <b>If you forget to submit, your
-            last backup will be automatically converted to a submission. </b></p>
+        <p>我们建议你在完成每一个问题后就提交一次。只有你最后一次提交的内容会被评分。这样也方便我们为你的代码多做备份，以防你遇到提交问题。
+          <b>如果你忘记提交，系统会自动将你最后一次备份转为正式提交。</b>
+        </p>
 
         <!--<p>After you run this command, you will receive an email (to the address-->
         <!--that you used to sign up for Ok) that has the output from all <i>failed</i>-->
@@ -345,29 +323,17 @@ do. If you need to get a fresh copy, you can download the
 <a href="cats.zip">zip archive</a> and copy it over, but you
 will need to start unlocking from scratch.</p> -->
 
-        <p>If you do not want us to record a backup of your work or information about
-          your progress, you can run
 
+        <p>如果你不希望我们记录你的作业备份或进度信息，可以运行
         <pre>python3 ok --local</pre>
-
-
-        With this option, no information will be sent to our course
-        servers.
-
-        If you want to test your code interactively, you can run
-
-        <pre> python3 ok -q [question number] -i </pre>
-
-        with the appropriate question number (e.g. <code>01</code>) inserted.
-        This will run the tests for that question until the first one you failed,
-        then give you a chance to test the functions you wrote interactively.</p>
-
-        <p>You can also use the debug printing feature in OK by writing
-
+        使用此选项时，任何信息都不会发送到课程服务器。
+        如果你想以交互方式测试你的代码，可以运行
+        <pre> python3 ok -q [问题编号] -i </pre>
+        将对应的问题编号（如 <code>01</code>）填入即可。此命令会运行该问题的测试，直到遇到第一个未通过的测试，然后你可以在交互环境中测试自己编写的函数。
+        </p>
+        <p>你还可以在 OK 中使用调试打印功能，只需写下
         <pre> print("DEBUG:", x) </pre>
-
-        which will produce an output in your terminal without causing OK tests to fail
-        with extra output.
+        这样会在终端输出调试信息，并且不会因为多余输出导致 OK 测试失败。
 
         <h1 id="phase-1-typing">Phase 1: Typing</h1>
 
